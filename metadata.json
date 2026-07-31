@@ -1,0 +1,6 @@
+{
+  "name": "EngineerOS-AI",
+  "description": "An integrated operating system and career portal for engineering students with mentoring, coding resources, and placement tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
