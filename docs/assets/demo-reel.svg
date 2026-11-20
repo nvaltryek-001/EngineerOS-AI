@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.5" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <style>
+      .sc { opacity: 0; animation: show 18s linear infinite; }
+      .k0 { animation-delay: 0s; }
+      .k1 { animation-delay: -15s; }
+      .k2 { animation-delay: -12s; }
+      .k3 { animation-delay: -9s; }
+      .k4 { animation-delay: -6s; }
+      .k5 { animation-delay: -3s; }
+      @keyframes show { 0% { opacity: 0; } 2% { opacity: 1; } 15% { opacity: 1; } 17% { opacity: 0; } 100% { opacity: 0; } }
+      .bar  { animation: bar 3s linear infinite; }
+      @keyframes bar { from { width: 0; } to { width: 700px; } }
+      .grow { animation: grow 3s ease-out infinite; transform-box: fill-box; transform-origin: left; }
+      @keyframes grow { 0% { transform: scaleX(0); } 40%,100% { transform: scaleX(1); } }
+      .gauge { stroke-dasharray: 0 400; animation: gauge 3s ease-out infinite; }
+      @keyframes gauge { 0% { stroke-dasharray: 0 400; } 50%,100% { stroke-dasharray: 260 400; } }
+      .pop  { animation: pop 3s ease-out infinite; }
+      @keyframes pop { 0%,30% { opacity: 0; } 45%,100% { opacity: 1; } }
+      .blink { animation: blink 1s steps(2) infinite; }
+      @keyframes blink { to { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="960" height="560" rx="24" fill="url(#bg)"/>
+
+  <!-- browser frame -->
+  <rect x="30" y="28" width="900" height="470" rx="14" fill="#f8fafc"/>
+  <rect x="30" y="28" width="900" height="36" rx="14" fill="#e2e8f0"/>
+  <rect x="30" y="50" width="900" height="14" fill="#e2e8f0"/>
+  <circle cx="54" cy="46" r="6" fill="#ef4444"/><circle cx="74" cy="46" r="6" fill="#f59e0b"/><circle cx="94" cy="46" r="6" fill="#22c55e"/>
+  <rect x="120" y="36" width="330" height="20" rx="10" fill="#fff"/>
+  <text x="134" y="50" fill="#64748b" font-size="12">localhost:3000 · EngineerOS AI</text>
+
+  <!-- sidebar (static) -->
+  <rect x="30" y="64" width="170" height="434" fill="#ffffff"/>
+  <line x1="200" y1="64" x2="200" y2="498" stroke="#e2e8f0"/>
+  <text x="48" y="94" fill="#1e293b" font-size="16" font-weight="800">⚙️ EngineerOS</text>
+  <g font-size="13" fill="#475569">
+    <text x="58" y="132">Dashboard</text>
+    <text x="58" y="162">AI Mentor</text>
+    <text x="58" y="192">Resume</text>
+    <text x="58" y="222">Roadmap</text>
+    <text x="58" y="252">Placement</text>
+    <text x="58" y="282">Coding</text>
+    <text x="58" y="312">Notes</text>
+    <text x="58" y="342">Profile</text>
+    <text x="58" y="372">Settings</text>
+  </g>
+
+  <!-- ============ Scene 0: Login ============ -->
+  <g class="sc k0">
+    <rect x="201" y="64" width="729" height="434" fill="#f1f5f9"/>
+    <rect x="410" y="110" width="310" height="340" rx="16" fill="#fff" stroke="#e2e8f0"/>
+    <text x="565" y="156" text-anchor="middle" fill="#0f172a" font-size="20" font-weight="800">Welcome back</text>
+    <text x="565" y="178" text-anchor="middle" fill="#64748b" font-size="12">Sign in to your EngineerOS workspace</text>
+    <rect x="436" y="200" width="258" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="448" y="223" fill="#334155" font-size="12">student@college.edu</text>
+    <rect x="436" y="246" width="258" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="448" y="269" fill="#334155" font-size="12">••••••••••</text>
+    <rect x="436" y="296" width="258" height="38" rx="8" fill="url(#accent)"/>
+    <text x="565" y="320" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Sign in</text>
+    <text x="565" y="356" text-anchor="middle" fill="#94a3b8" font-size="11">or</text>
+    <rect x="436" y="368" width="258" height="38" rx="8" fill="#fff" stroke="#cbd5e1"/>
+    <text x="565" y="392" text-anchor="middle" fill="#334155" font-size="13" font-weight="600">G  Continue with Google</text>
+    <text x="565" y="432" text-anchor="middle" fill="#64748b" font-size="11">Firebase Auth · email + Google sign-in</text>
+  </g>
+
+  <!-- ============ Scene 1: Dashboard ============ -->
+  <g class="sc k1">
+    <rect x="201" y="64" width="729" height="434" fill="#f1f5f9"/>
+    <rect x="40" y="117" width="150" height="22" rx="6" fill="#dbeafe"/><text x="58" y="132" fill="#1d4ed8" font-size="13" font-weight="700">Dashboard</text>
+    <text x="226" y="102" fill="#0f172a" font-size="22" font-weight="800">Dashboard</text>
+    <g font-size="11">
+      <rect x="226" y="120" width="160" height="78" rx="12" fill="#fff"/><text x="242" y="144" fill="#64748b">Problems Solved</text><text x="242" y="178" fill="#2563eb" font-size="26" font-weight="800">142</text>
+      <rect x="400" y="120" width="160" height="78" rx="12" fill="#fff"/><text x="416" y="144" fill="#64748b">Interviews Scheduled</text><text x="416" y="178" fill="#8b5cf6" font-size="26" font-weight="800">3</text>
+      <rect x="574" y="120" width="160" height="78" rx="12" fill="#fff"/><text x="590" y="144" fill="#64748b">Roadmap Progress</text><text x="590" y="178" fill="#16a34a" font-size="26" font-weight="800">64%</text>
+      <rect x="748" y="120" width="160" height="78" rx="12" fill="#fff"/><text x="764" y="144" fill="#64748b">Notes Created</text><text x="764" y="178" fill="#f59e0b" font-size="26" font-weight="800">27</text>
+    </g>
+    <rect x="226" y="214" width="420" height="260" rx="12" fill="#fff"/>
+    <text x="244" y="240" fill="#0f172a" font-size="14" font-weight="700">Recent Applications</text>
+    <g font-size="12" fill="#334155">
+      <text x="244" y="276">Google · SDE Intern</text><rect x="540" y="263" width="86" height="20" rx="10" fill="#fef3c7"/><text x="552" y="277" fill="#b45309" font-size="11">In Progress</text>
+      <text x="244" y="316">Microsoft · SWE</text><rect x="540" y="303" width="86" height="20" rx="10" fill="#dbeafe"/><text x="558" y="317" fill="#1d4ed8" font-size="11">Interview</text>
+      <text x="244" y="356">Infosys · Systems Eng.</text><rect x="540" y="343" width="86" height="20" rx="10" fill="#dcfce7"/><text x="566" y="357" fill="#15803d" font-size="11">Offer 🎉</text>
+      <text x="244" y="396">Amazon · SDE-1</text><rect x="540" y="383" width="86" height="20" rx="10" fill="#f1f5f9"/><text x="560" y="397" fill="#475569" font-size="11">Applied</text>
+    </g>
+    <rect x="660" y="214" width="248" height="260" rx="12" fill="#fff"/>
+    <text x="678" y="240" fill="#0f172a" font-size="14" font-weight="700">Weekly progress</text>
+    <g fill="url(#accent)">
+      <rect class="grow" x="680" y="270" width="190" height="16" rx="8"/>
+      <rect class="grow" x="680" y="306" width="140" height="16" rx="8"/>
+      <rect class="grow" x="680" y="342" width="210" height="16" rx="8"/>
+      <rect class="grow" x="680" y="378" width="110" height="16" rx="8"/>
+      <rect class="grow" x="680" y="414" width="170" height="16" rx="8"/>
+    </g>
+  </g>
+
+  <!-- ============ Scene 2: AI Mentor ============ -->
+  <g class="sc k2">
+    <rect x="201" y="64" width="729" height="434" fill="#f1f5f9"/>
+    <rect x="40" y="147" width="150" height="22" rx="6" fill="#dbeafe"/><text x="58" y="162" fill="#1d4ed8" font-size="13" font-weight="700">AI Mentor</text>
+    <text x="226" y="102" fill="#0f172a" font-size="22" font-weight="800">AI Mentor <tspan fill="#8b5cf6" font-size="13">· powered by Gemini</tspan></text>
+    <rect x="226" y="118" width="682" height="300" rx="12" fill="#fff"/>
+    <rect x="560" y="138" width="328" height="44" rx="14" fill="url(#accent)"/>
+    <text x="578" y="165" fill="#fff" font-size="13">How do I prepare for graph questions?</text>
+    <g class="pop">
+      <rect x="246" y="200" width="450" height="118" rx="14" fill="#f1f5f9"/>
+      <text x="264" y="226" fill="#0f172a" font-size="13" font-weight="700">🤖 Mentor</text>
+      <text x="264" y="250" fill="#334155" font-size="12">1. Master BFS / DFS on grids and adjacency lists.</text>
+      <text x="264" y="272" fill="#334155" font-size="12">2. Then topological sort, Dijkstra and union-find.</text>
+      <text x="264" y="294" fill="#334155" font-size="12">3. Solve 2–3 problems a day and log them in Coding.</text>
+    </g>
+    <rect x="246" y="340" width="230" height="56" rx="12" fill="#ede9fe" class="pop"/>
+    <text x="262" y="364" fill="#6d28d9" font-size="12" font-weight="700" class="pop">💡 Practice Graph Algorithms</text>
+    <text x="262" y="382" fill="#7c3aed" font-size="11" class="pop">Suggested from your interviews</text>
+    <rect x="226" y="430" width="682" height="44" rx="12" fill="#fff" stroke="#cbd5e1"/>
+    <text x="246" y="457" fill="#94a3b8" font-size="13">Type your message...</text>
+    <rect x="410" y="444" width="2" height="18" fill="#2563eb" class="blink"/>
+    <rect x="846" y="438" width="52" height="28" rx="8" fill="url(#accent)"/><text x="872" y="457" text-anchor="middle" fill="#fff" font-size="12">Send</text>
+  </g>
+
+  <!-- ============ Scene 3: Resume ============ -->
+  <g class="sc k3">
+    <rect x="201" y="64" width="729" height="434" fill="#f1f5f9"/>
+    <rect x="40" y="177" width="150" height="22" rx="6" fill="#dbeafe"/><text x="58" y="192" fill="#1d4ed8" font-size="13" font-weight="700">Resume</text>
+    <text x="226" y="102" fill="#0f172a" font-size="22" font-weight="800">Resume Matcher</text>
+    <rect x="226" y="118" width="260" height="90" rx="12" fill="#fff" stroke="#93c5fd" stroke-dasharray="6 4"/>
+    <text x="356" y="152" text-anchor="middle" fill="#2563eb" font-size="22">📄</text>
+    <text x="356" y="176" text-anchor="middle" fill="#334155" font-size="12">resume_final.pdf</text>
+    <text x="356" y="194" text-anchor="middle" fill="#16a34a" font-size="11">File ready for analysis ✓</text>
+    <rect x="226" y="222" width="260" height="252" rx="12" fill="#fff"/>
+    <text x="244" y="248" fill="#0f172a" font-size="13" font-weight="700">ATS Compatibility Score</text>
+    <circle cx="356" cy="350" r="62" fill="none" stroke="#e2e8f0" stroke-width="14"/>
+    <circle class="gauge" cx="356" cy="350" r="62" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" transform="rotate(-90 356 350)"/>
+    <text x="356" y="360" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">78</text>
+    <text x="356" y="452" text-anchor="middle" fill="#64748b" font-size="11">Analysed by Gemini</text>
+    <rect x="500" y="118" width="408" height="160" rx="12" fill="#fff"/>
+    <text x="518" y="144" fill="#0f172a" font-size="13" font-weight="700">Technical Expertise</text>
+    <g font-size="11" fill="#475569">
+      <text x="518" y="174">React</text><rect x="600" y="164" width="280" height="12" rx="6" fill="#e2e8f0"/><rect class="grow" x="600" y="164" width="240" height="12" rx="6" fill="#2563eb"/>
+      <text x="518" y="204">Node.js</text><rect x="600" y="194" width="280" height="12" rx="6" fill="#e2e8f0"/><rect class="grow" x="600" y="194" width="190" height="12" rx="6" fill="#8b5cf6"/>
+      <text x="518" y="234">SQL</text><rect x="600" y="224" width="280" height="12" rx="6" fill="#e2e8f0"/><rect class="grow" x="600" y="224" width="150" height="12" rx="6" fill="#16a34a"/>
+      <text x="518" y="264">DSA</text><rect x="600" y="254" width="280" height="12" rx="6" fill="#e2e8f0"/><rect class="grow" x="600" y="254" width="210" height="12" rx="6" fill="#f59e0b"/>
+    </g>
+    <rect x="500" y="292" width="408" height="182" rx="12" fill="#fff"/>
+    <text x="518" y="318" fill="#0f172a" font-size="13" font-weight="700">Missing Keywords</text>
+    <g font-size="11" class="pop">
+      <rect x="518" y="332" width="64" height="22" rx="11" fill="#fee2e2"/><text x="530" y="347" fill="#b91c1c">Docker</text>
+      <rect x="590" y="332" width="76" height="22" rx="11" fill="#fee2e2"/><text x="602" y="347" fill="#b91c1c">CI / CD</text>
+      <rect x="674" y="332" width="92" height="22" rx="11" fill="#fee2e2"/><text x="686" y="347" fill="#b91c1c">System design</text>
+    </g>
+    <text x="518" y="388" fill="#0f172a" font-size="13" font-weight="700">Improvement Suggestions</text>
+    <text x="518" y="412" fill="#475569" font-size="11" class="pop">• Quantify project impact (users, latency, %).</text>
+    <text x="518" y="432" fill="#475569" font-size="11" class="pop">• Add a deployed link for each project.</text>
+    <text x="518" y="452" fill="#475569" font-size="11" class="pop">• Move skills above education for SDE roles.</text>
+  </g>
+
+  <!-- ============ Scene 4: Roadmap + Placement ============ -->
+  <g class="sc k4">
+    <rect x="201" y="64" width="729" height="434" fill="#f1f5f9"/>
+    <rect x="40" y="237" width="150" height="22" rx="6" fill="#dbeafe"/><text x="58" y="252" fill="#1d4ed8" font-size="13" font-weight="700">Placement</text>
+    <text x="226" y="102" fill="#0f172a" font-size="22" font-weight="800">Placement Tracking</text>
+    <text x="226" y="122" fill="#64748b" font-size="12">Manage your job applications, interviews, and offers.</text>
+    <g font-size="11">
+      <rect x="226" y="136" width="216" height="74" rx="12" fill="#fff"/><text x="242" y="160" fill="#64748b">Total Applied</text><text x="242" y="194" fill="#2563eb" font-size="26" font-weight="800">18</text>
+      <rect x="456" y="136" width="216" height="74" rx="12" fill="#fff"/><text x="472" y="160" fill="#64748b">Active Interviews</text><text x="472" y="194" fill="#8b5cf6" font-size="26" font-weight="800">3</text>
+      <rect x="686" y="136" width="222" height="74" rx="12" fill="#fff"/><text x="702" y="160" fill="#64748b">Offers</text><text x="702" y="194" fill="#16a34a" font-size="26" font-weight="800">1</text>
+    </g>
+    <rect x="226" y="226" width="682" height="248" rx="12" fill="#fff"/>
+    <text x="244" y="252" fill="#0f172a" font-size="14" font-weight="700">Career Roadmap · Full-Stack Engineering</text>
+    <line x1="270" y1="330" x2="870" y2="330" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round"/>
+    <line class="grow" x1="270" y1="330" x2="650" y2="330" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+    <g font-size="11" text-anchor="middle">
+      <circle cx="270" cy="330" r="14" fill="#16a34a"/><text x="270" y="335" fill="#fff">✓</text><text x="270" y="366" fill="#334155">HTML / CSS</text>
+      <circle cx="420" cy="330" r="14" fill="#16a34a"/><text x="420" y="335" fill="#fff">✓</text><text x="420" y="366" fill="#334155">JavaScript</text>
+      <circle cx="570" cy="330" r="14" fill="#16a34a"/><text x="570" y="335" fill="#fff">✓</text><text x="570" y="366" fill="#334155">React</text>
+      <circle cx="720" cy="330" r="14" fill="#f59e0b"/><text x="720" y="335" fill="#fff">…</text><text x="720" y="366" fill="#334155">Databases</text>
+      <circle cx="870" cy="330" r="14" fill="#cbd5e1"/><text x="870" y="366" fill="#334155">System design</text>
+    </g>
+    <rect x="244" y="396" width="646" height="58" rx="10" fill="#eff6ff" class="pop"/>
+    <text x="262" y="420" fill="#1d4ed8" font-size="12" font-weight="700" class="pop">✨ AI Recommendations</text>
+    <text x="262" y="440" fill="#334155" font-size="12" class="pop">Practice Graph Algorithms — you have upcoming interviews that frequently ask graph questions.</text>
+  </g>
+
+  <!-- ============ Scene 5: Coding + Notes ============ -->
+  <g class="sc k5">
+    <rect x="201" y="64" width="729" height="434" fill="#f1f5f9"/>
+    <rect x="40" y="267" width="150" height="22" rx="6" fill="#dbeafe"/><text x="58" y="282" fill="#1d4ed8" font-size="13" font-weight="700">Coding</text>
+    <text x="226" y="102" fill="#0f172a" font-size="22" font-weight="800">Coding Practice</text>
+    <rect x="226" y="118" width="300" height="356" rx="12" fill="#fff"/>
+    <text x="244" y="146" fill="#0f172a" font-size="15" font-weight="700">1. Two Sum</text>
+    <rect x="410" y="132" width="50" height="20" rx="10" fill="#dcfce7"/><text x="420" y="146" fill="#15803d" font-size="11">Easy</text>
+    <g fill="#475569" font-size="11">
+      <text x="244" y="176">Given an array of integers nums and an</text>
+      <text x="244" y="194">integer target, return indices of the two</text>
+      <text x="244" y="212">numbers such that they add up to target.</text>
+      <text x="244" y="246" fill="#0f172a" font-weight="700">Example 1:</text>
+      <text x="244" y="266">Input: nums = [2,7,11,15], target = 9</text>
+      <text x="244" y="284">Output: [0,1]</text>
+    </g>
+    <rect x="540" y="118" width="368" height="300" rx="12" fill="#0f172a"/>
+    <text x="558" y="142" fill="#94a3b8" font-size="11">solution.ts</text>
+    <g font-family="Consolas, Menlo, monospace" font-size="12">
+      <text x="558" y="174" fill="#c084fc">function <tspan fill="#60a5fa">twoSum</tspan><tspan fill="#e2e8f0">(nums, target) {</tspan></text>
+      <text x="576" y="196" fill="#c084fc">const <tspan fill="#e2e8f0">seen = </tspan><tspan fill="#c084fc">new </tspan><tspan fill="#facc15">Map</tspan><tspan fill="#e2e8f0">();</tspan></text>
+      <text x="576" y="218" fill="#c084fc">for <tspan fill="#e2e8f0">(let i = 0; i &lt; nums.length; i++) {</tspan></text>
+      <text x="594" y="240" fill="#c084fc">const <tspan fill="#e2e8f0">need = target - nums[i];</tspan></text>
+      <text x="594" y="262" fill="#c084fc">if <tspan fill="#e2e8f0">(seen.has(need))</tspan></text>
+      <text x="612" y="282" fill="#c084fc">return <tspan fill="#e2e8f0">[seen.get(need), i];</tspan></text>
+      <text x="594" y="304" fill="#e2e8f0">seen.set(nums[i], i);</text>
+      <text x="576" y="326" fill="#e2e8f0">}</text>
+      <text x="558" y="348" fill="#e2e8f0">}</text>
+    </g>
+    <rect x="558" y="362" width="2" height="16" fill="#60a5fa" class="blink"/>
+    <rect x="540" y="430" width="368" height="44" rx="12" fill="#dcfce7" class="pop"/>
+    <text x="560" y="457" fill="#15803d" font-size="13" font-weight="700" class="pop">✓ Accepted · logged to your Coding progress</text>
+  </g>
+
+  <!-- progress + caption -->
+  <rect x="200" y="492" width="730" height="6" fill="#e2e8f0"/>
+  <rect class="bar" x="200" y="492" width="0" height="6" fill="url(#accent)"/>
+  <text x="480" y="532" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">▶ EngineerOS AI · product walkthrough</text>
+  <text x="480" y="550" text-anchor="middle" fill="#c7d2fe" font-size="11">Login → Dashboard → AI Mentor → Resume Matcher → Roadmap &amp; Placement → Coding</text>
+</svg>

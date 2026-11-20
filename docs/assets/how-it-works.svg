@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="hb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <style>
+      .flow { stroke-dasharray: 8 8; animation: dash 1s linear infinite; }
+      .n1 { animation: glow 7.5s infinite; }
+      .n2 { animation: glow 7.5s 1.5s infinite; }
+      .n3 { animation: glow 7.5s 3s infinite; }
+      .n4 { animation: glow 7.5s 4.5s infinite; }
+      .n5 { animation: glow 7.5s 6s infinite; }
+      @keyframes dash { to { stroke-dashoffset: -16; } }
+      @keyframes glow { 0%,18% { transform: translateY(-6px); opacity: 1; } 22%,100% { transform: translateY(0); opacity: .82; } }
+    </style>
+  </defs>
+  <rect width="900" height="250" rx="20" fill="url(#hb)"/>
+  <text x="450" y="38" fill="#fff" font-size="20" font-weight="800" text-anchor="middle">How EngineerOS works — one workspace for the placement journey</text>
+  <g stroke="#a5b4fc" stroke-width="3" fill="none">
+    <path class="flow" d="M170 140 H200"/><path class="flow" d="M340 140 H370"/>
+    <path class="flow" d="M510 140 H540"/><path class="flow" d="M680 140 H710"/>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <g class="n1"><rect x="30" y="70" width="140" height="140" rx="16" fill="#f59e0b"/>
+      <text x="100" y="112" font-size="30">🔐</text>
+      <text x="100" y="144" fill="#fff" font-weight="700">1. Sign in</text>
+      <text x="100" y="166" fill="#fef3c7" font-size="11">Firebase Auth</text>
+      <text x="100" y="182" fill="#fef3c7" font-size="11">email or Google</text></g>
+    <g class="n2"><rect x="200" y="70" width="140" height="140" rx="16" fill="#2563eb"/>
+      <text x="270" y="112" font-size="30">📄</text>
+      <text x="270" y="144" fill="#fff" font-weight="700">2. Upload résumé</text>
+      <text x="270" y="166" fill="#dbeafe" font-size="11">PDF / DOCX parsed</text>
+      <text x="270" y="182" fill="#dbeafe" font-size="11">on the server</text></g>
+    <g class="n3"><rect x="370" y="70" width="140" height="140" rx="16" fill="#8b5cf6"/>
+      <text x="440" y="112" font-size="30">🤖</text>
+      <text x="440" y="144" fill="#fff" font-weight="700">3. Gemini AI</text>
+      <text x="440" y="166" fill="#ede9fe" font-size="11">ATS score, gaps,</text>
+      <text x="440" y="182" fill="#ede9fe" font-size="11">mentor chat</text></g>
+    <g class="n4"><rect x="540" y="70" width="140" height="140" rx="16" fill="#16a34a"/>
+      <text x="610" y="112" font-size="30">🗺️</text>
+      <text x="610" y="144" fill="#fff" font-weight="700">4. Plan &amp; practise</text>
+      <text x="610" y="166" fill="#dcfce7" font-size="11">Roadmap, coding</text>
+      <text x="610" y="182" fill="#dcfce7" font-size="11">log, study notes</text></g>
+    <g class="n5"><rect x="710" y="70" width="160" height="140" rx="16" fill="#db2777"/>
+      <text x="790" y="112" font-size="30">🎯</text>
+      <text x="790" y="144" fill="#fff" font-weight="700">5. Get placed</text>
+      <text x="790" y="166" fill="#fce7f3" font-size="11">Track applications,</text>
+      <text x="790" y="182" fill="#fce7f3" font-size="11">interviews &amp; offers</text></g>
+  </g>
+</svg>
